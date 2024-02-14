@@ -14,10 +14,10 @@ int main()
     cin >> table_y1;
     cin >> table_y2;
     if (click_x == table_x){
-        if(click_y > table_y1 && click_y < table_y2){
-            cout << "YES";
+        if(click_y >= table_y1 && click_y <= table_y2){
+            cout << "YES\n";
         }
     }
     else 
-        cout << "NO";
+        cout << "NO\n"; 
 }
