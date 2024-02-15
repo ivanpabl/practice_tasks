@@ -13,11 +13,8 @@ int main()
     cin >> table_x;
     cin >> table_y1;
     cin >> table_y2;
-    if (click_x == table_x){
-        if(click_y >= table_y1 && click_y <= table_y2){
-            cout << "YES\n";
-        }
-    }
+    if (click_x == table_x && click_y >= table_y1 && click_y <= table_y2 || click_x >= win_x1 && click_x <= win_x2 && click_y >= win_y1 && click_y <= win_y2)
+        cout << "YES\n";
     else 
         cout << "NO\n"; 
 }
